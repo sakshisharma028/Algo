@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-
+#include<windows.h>
 void run();
 void printMap();
 void initMap();
