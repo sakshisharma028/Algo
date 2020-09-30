@@ -35,7 +35,7 @@ struct node* insert(struct node* node, int x)
     /]
     if (x < node->key)
         node->left  = insert(node->left, x);
-    else if (x > node->key)
+    else if (x > = node->key)
         node->right = insert(node->right, x);   
  
     return node;
@@ -49,9 +49,7 @@ int main()
     insert(root, 30);
     insert(root, 20);
     insert(root, 40);
-    insert(root, 70);
-    insert(root, 60);
-    insert(root, 80);
+    
     //print tree
     inorder(root);
   
