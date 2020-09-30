@@ -14,14 +14,14 @@ int main(){
 
 	//INSERTION SORT
 	//sort all elements from [1, N-1]
-	for(int i = 1; i < n ; ++i){
+	for(int i = 1; i < n ; i++){
 		int curEle = arr[i];
 		int st = i - 1;	//st is the start of the range towards left
 		
     while(st >= 0){
 			if (arr[st] > curEle){
 				arr[st + 1] = arr[st];	//shifting
-				--st;	//move to left
+				st--;	//move to left
 			}
 			
       else{
